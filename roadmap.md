@@ -54,6 +54,8 @@ These are things that I would aim to learn in the first year of either internshi
 
 ## Important Tools To Know About
 
+Random technologies, tools, or data structures that you'll probably run into.
+
 **Containers** - See Docker documentation. It's essentially a very lightweight virtual machine. Great for running programs in parallel that have conflicting dependencies and making sure everyone on the team can run the apps regardless of their system.
 
 **Hashing Methods**
@@ -116,12 +118,13 @@ Everyone interacts with the cloud at this point, and it's good to have a general
 * **Storage** - AWS S3 or Azure Blob Storage
 * **Virtual Machines**
 * **Load Balancers**
-* **Infrastructure As Code** Tools - Azure ARM Templates or AWS Terraform
+* **Infrastructure As Code** Tools - Azure ARM Templates, Terraform, AWS CloudFormation
 * **Virtual Networks and Subnets**
 * **Serverless Compute** - AWS Lambda or Azure Functions
 * **Container Orchestration** Tools - Kubernetes is usually what is used, it's an open source tool. AWS and Azure have their own wrapper services that make it easier to use
 * **CDNs** (Content Delivery Networks)
 * **Firewalls**
+	* **IDS** (Indrusion Detection Systems)
 * **Low Code Workflow Tools** - Azure Logic Apps or Power Automate
 * **Message Queues** - AWS SMS or Azure Service Bus
 
@@ -132,6 +135,11 @@ At this point people may start to expect you to know certain things around netwo
 * **Routing** - routing is how one computer on a network finds another computer. This happens over the public internet too. It's very interesting: https://en.wikipedia.org/wiki/Routing
 
 ## Security
+
+When people talk about security, it is going to fall into one or more of the **CIA** (Confidentiality, Integrity and Availability) categories.
+* **Confidentiality** - The most obvious security risk is when someone attempts to get access to confidential info. Example: Getting access to a password through phishing and signing into a private system 
+* **Integrity** - Another attack might attempt to damage the information or systems you have. Example: Tampering with messages sent over the internet, even if they are encrypted (you can damage the integrity of data without having to decrypt it)
+* **Availability** - Other attacks might attempt to make your information or systems unavailable or unreliable. Example: DDOS
 
 Here are some more security concepts to be aware of as a full-stack developer. If you want to cover most of these in one go, any good OWASP course online will work.
 * **DDOS Attacks** - Denial of Service attacks are basically just overloading your servers to the point that they become useless to your customers. There are various solutions to mitigate this, especially on the cloud including AI powered firewalls and load balancers
@@ -148,7 +156,7 @@ I would recommend going over the cloud section first before hitting this. First,
 
 ## Methodology
 * **Test Driven Development** - an important development methodology that forces you to write automated tests *before* you write the code itself. This forces you to structure your code in a testable way, clearly define success, and obviously creates great test coverage for long term stability. https://en.wikipedia.org/wiki/Test-driven_development and https://www.youtube.com/watch?v=Bq_oz7nCNUA are good intros. https://www.youtube.com/watch?v=EZ05e7EMOLM is a very interesting talk on the pros and cons of the method.
-* **Domain Driven Design** - A popular architectural style especially used in the Microsoft stack. Quick intro video: https://www.youtube.com/watch?v=8Z5IAkWcnIw More in depth explanation (which also goes over Event Sourcing and CQRS): https://www.youtube.com/watch?v=rolfJR9ERxo
+* **Domain Driven Design** - A popular style of development that aims to improve the language developers and SME use to communicate. Quick intro video: https://www.youtube.com/watch?v=8Z5IAkWcnIw More in depth explanation (which also goes over Event Sourcing and CQRS): https://www.youtube.com/watch?v=rolfJR9ERxo
 
 ## Frontend
 
@@ -207,3 +215,21 @@ If you've mastered level 2, you have a well rounded understanding of full-stack 
 ## UI / UX Developer
 
 # Appendix: My Favorite Resources
+
+YouTube Channels:
+* For programming best practices and everything .NET: https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg
+* For quick updates on the frontend world: https://www.youtube.com/@Fireship
+* For in depth explanations of math topics: https://www.youtube.com/@3blue1brown (he has very good explanations of how Proof of Work blockchains work and how neural networks work)
+* For even more math explanations: https://www.youtube.com/@misterwootube
+* For long form interviews with legendary programmers: https://www.youtube.com/@lexfridman
+* For in depth explanations of computer science concepts like compilers and encryption: https://www.youtube.com/@Computerphile
+* For some of the best conference talks on architecture and design: https://www.youtube.com/@GOTO-
+* For a very senior developer's opinions on development methodologies: https://www.youtube.com/@ContinuousDelivery (not everyone agrees with him, but he always has nuanced opinions)
+* For literal MIT computer science courses: https://www.youtube.com/@mitocw (I still can't believe these are free)
+* For high level breakdowns of various blockchain concepts: https://www.youtube.com/@WhiteboardCrypto
+* For very in depth crypto explanations and discussions: https://www.youtube.com/@charleshoskinsoncrypto
+
+Learning Platforms:
+* A Cloud Guru - a platform that teaches you cloud and includes sandbox environments
+* RangeForce - a platform that teaches you security and includes hands on exersises
+* LinkedIn Learning - most of what I learned early on was from LinkedIn Learning, it has a lot of good content. Other learning platforms like Udemy are also great
