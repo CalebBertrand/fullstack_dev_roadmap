@@ -1,5 +1,5 @@
 
-Disclaimer: this isn't meant to be an end all be all. I'm not saying if you don't know something on the list, you're a fraud. These are just things that I have found useful in my career so far, ranked from most fundamental to most specialized / complex. It's mainly a list of topics, and the research is for you to do. Doing my own research usually cements the ideas for longer.
+Disclaimer: this isn't meant to be an end all be all. These are just things that I have found useful in my career so far, ranked from most fundamental to most specialized / complex. It's mainly a list of topics, and the research is for you to do. Doing my own research usually cements the ideas for longer.
 
 # Level 0: Tools of the Trade
 
@@ -20,12 +20,12 @@ I consider these a bare minimum for anyone who wants to be any kind of software 
 	* `merge` - just a conceptual understanding is fine, since you only need this one when working with others
 	* Other very helpful ones are `status` and `stash`
 * You should be able to to basic things in the unix (mac and linux) command line like change folders (`cd`), list the files in the current folder (`ls`), create a folder (`mkdir`), make a file ( `touch`) and clear the terminal display `clear`. A lot of these work in windows too. Other useful commands are `ping`, `nano`, `pwd`, `find`, `rm`, `cat`
-* **Debugger** - not learning to use the debugger is like trying to push a nail into wood with your bare hands when a hammer is within reach. It's not that hard and it will save you rediculous ammounts of time
+* **Debugger** - not learning to use the debugger is like trying to push a nail into wood with your bare hands when a hammer is within reach. It's not that hard and it will save you ridiculous ammounts of time
 	* Also play around with the "watch" feature of your debugger. You can type any expression into the watch and the expression will be evaluated. 
 
 # Level 1: Learning the Ropes
 
-These are things that I would aim to learn in the first year of either internships or junior development.
+These are things that I would aim to learn in the first year of either internships or junior development. It's tailored to full-stack development, so this would be different for say, embedded iot or game development.
 
 ## High Level Concepts
 
@@ -36,7 +36,7 @@ These are things that I would aim to learn in the first year of either internshi
 * Open Closed Principle - implementation details should be private, but imformation useful to sub-classes should be available. In C# and TypeScript, this can be accomplished with the `protected` access modifier.
 * Linskov Substitution - If classes B and C inherit from A and a function's parameter accepts classes of type A, passing in either a B or C should have the exact same behavior. In other words, subtypes should be substitutable if the consumer is only concerned with the supertype.
 * Interface Segregation - keep interfaces as small and distinct as possible to maximize reusability
-* Dependency Inversion - use abstractions instead of implementations when possible. This means work with interfaces, base classes, and abstract classes when possible instead of directly using a class. It makes things easier to test and refactor in the future.
+* Dependency Inversion - use abstractions such as interfaces, base classes, and abstract classes when possible to remove any dependencies from high level components on lower level components. 
 
 **Composition over Inheritance** - Program to interfaces by default, only use inheritance when there is a clear advantage. This is a good example: https://www.baeldung.com/cs/program-to-interface
 **Time Complexity / Algorithm Analysis** - If you went to college, you are probably set here. If not, make sure you understand big O notation
@@ -47,7 +47,7 @@ These are things that I would aim to learn in the first year of either internshi
 * Set
 * Trees
 
-**Functional Programming and Side Effects** - Good to know the ideas of pure functions and side effects. Don't need to go super deep but those terms are good to have in the vocabulary
+**Functional Programming and Side Effects** - Good to know the ideas of pure functions and side effects. Don't need to go super deep but those terms are good to have in the vocabulary. You may never write in a purely functional language, but many general purpose languages take inspiration from them
 
 **Testing** - Get familiar with automated tests. Unit tests and integration tests are the main ones to know about. There will certainly be libraries in your language of choice the help with both.
 * Mocking - a method to create fake versions of dependencies so that you aren't directly dependent on them in your unit tests
@@ -80,7 +80,7 @@ If you're a full-stack developer, you'll most likely work with front-end technol
 	* iframes
 	* forms
 
-Once you've got that (especially the DOM Manipulation part), you can pick a frontend framework to learn. **React**, **Angular** and **Vue** are popular ones. **Svelte** is also an option but I would recommend learning that after one of the others.
+Once you've got that (especially the DOM Manipulation part), you can pick a frontend framework to learn. **React**, **Angular** and **Vue** are popular ones. There are many others like **Svelte** and **Solid** but I would recommend learning them after one of the more popular ones. You will have better job opportunities
 
 ## List Manipulation
 
@@ -126,7 +126,7 @@ Everyone interacts with the cloud at this point, and it's good to have a general
 * **Firewalls**
 	* **IDS** (Indrusion Detection Systems)
 * **Low Code Workflow Tools** - Azure Logic Apps or Power Automate
-* **Message Queues** - AWS SMS or Azure Service Bus
+* **Message Queues** - AWS SMS, Azure Service Bus, RabbitMQ
 
 ## Networking
 
@@ -152,6 +152,13 @@ Here are some more security concepts to be aware of as a full-stack developer. I
 I would recommend going over the cloud section first before hitting this. First, watch this short video on architecture: https://www.youtube.com/watch?v=ElMnHDSFaCw&list=PLwLLcwQlnXBxeirFuVX9D24UMLSGU65Tw this guy's channel has a lot of other good stuff.
 * Difference between a **Monolith** and **Microservices** - https://www.youtube.com/watch?v=GBTdnfD6s5Q
 * Difference between **Event Driven** and **RPC** Style Microservices - Event driven architecture is when each service emits events for things related to that service, and other services react to those events in whatever way they choose. RPC (remote procedure call) style architecture is more tightly coupled and is where services explicitly call for actions to be made in other services. The benefits of event-driven is things are very loosely coupled, while the downside is there can be a lot of noise and unnesecary messages. The benefits of RPC is it's much more direct but at the same time, that tight coupling can be bad. https://www.youtube.com/watch?v=STKCRSUsyP0
+* Start to think about the common components to a production system, and the pros or cons of using different tech stacks / services. Here are some categories to get you started:
+  	* Hosting services (example: serverless vs not)
+  	* Networks & firewalls
+  	* Caching services
+  	* Edge computing & CDNs
+  	* Database services, (example: SQL vs NoSQL)
+  	* Service registries (see: Eureka)
 
 
 ## Methodology
@@ -160,7 +167,7 @@ I would recommend going over the cloud section first before hitting this. First,
 
 ## Frontend
 
-At this point you've been working with a frontend framework for a little while. I would look into these topics to 
+At this point you've been working with a frontend framework for a little while. I would look into these topics too
 * **Typescript** - if you aren't already using TypeScript, check it out! It's super powerful and helpful
 * **Redux** pattern - redux is a design pattern meant to make managing state easier. There are various libraries that implement this pattern depending on the framework you use (Redux for React, NgRx for Angular, etc)
 * **Change Detection** - this is the process that your framework of choice uses to determine which DOM changes need to be made after you do stuff to change the state. It's good to look into because there are some gotchyas around reference types like arrays and objects. The exception to this would be Svelte, because it doesn't do change detection. It has a fancy compiler that explicitly manipulates the DOM without having to detect changes.
@@ -182,8 +189,8 @@ Certain algorithms are especially helpful to know. I find that graph algorithms 
 
 Knowing these will also be a huge plus in interviews, especially BFS and DFS. Other algorithms that are helpful in interviews:
 * **Traversing Trees** - whether it be a binary tree or a tree with more branches
-* **Reversing a String** - I don't know why but this comes up in a lot of interviews. The easy way out is to convert it to a list of characters and reverse the list, then convert back.
-* **Determine if a String is a Palindrome** - Another random problem that interviewers love. You can use recursion, but a loop would be more efficient.
+* **Reversing a String** - I don't know why but this comes up in a lot of interviews
+* **Determine if a String is a Palindrome** - Another random problem that interviewers love. You can use recursion, but a loop would be more efficient
 
 ## More On Databases
 
@@ -193,6 +200,7 @@ Knowing these will also be a huge plus in interviews, especially BFS and DFS. Ot
 * Take a deeper dive into SQL. I highly recommend this course: https://www.linkedin.com/learning/advanced-sql-logical-query-processing-part-1/course-introduction?autoplay=true 
 	* **Set Operations**
 	* **Query Processing Order** - different parts of a query execute in a set order. Knowing this can make debugging queries much easier. Again, I recommend that LinkedIn Learning course listed above
+ 	* **Stored Procedures**
 
 # Level 3: Specialization
 
@@ -203,6 +211,12 @@ If you've mastered level 2, you have a well rounded understanding of full-stack 
 ## AI and ML
 
 ## Data Engineering
+
+Some technologies to look into:
+* **Apache Spark**
+* **Hadoop**
+* **DataBricks**, **Palantir**, or some other data platform
+* **Azure Data Factory**, or similar in your cloud of choice
 
 ## Security
 
