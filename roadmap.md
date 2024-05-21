@@ -208,25 +208,59 @@ If you've mastered level 2, you have a well rounded understanding of full-stack 
 
 ## Blockchain
 
-## AI and ML
-
 ## Data Engineering
 
+This role is great because it's in extremely high demand. It can be a good fit for anyone who likes backend and enjoys handling the complexity that comes with working on data.
 Some technologies to look into:
+* **Python**
 * **Apache Spark**
+* **Pandas**
 * **Hadoop**
 * **DataBricks**, **Palantir**, or some other data platform
 * **Azure Data Factory**, or similar in your cloud of choice
+* Data focused languages like **R** and **Scala**
 
 ## Security
 
-## Cloud
+## DevOps
+
+## Cloud / Architect
+
+A cloud focus can be a good transition from full-stack, as you just continue to broaden your understanding of technologies and stacks. Except instead of just front-end, back-end, and database, you have more categories to consider. Also, as someone
 
 ## Backend Specialist
 
+This can be a great fit for people who are very detail oriented, like algorithms, and may not enjoy the messines of the front-end as much.
+Look into more design principles and best practices for backend development. This will often have overlap with a cloud or architectural role, as many backends are more and more distributed these days. Here are some things to think about: 
+* Master your IDE of choice
+* Get better at profiling and optimizing performance
+* Be sure you understand multithreading
+* While you should have some level of cluster understanding regardless, as a backend specialist you may want to grow further in technologies like Kubernetes, and how to scale / optimize them
+
 ## Frontend Specialist
 
+This role is good for those who enjoy front-end technologies, and are great at tackling the inherent messiness of human to computer interaction. Another benefit of this role is it's very visible. You can easily point to features and apps you helped build.
+Front-end specialists have a lot of areas to grow in, as they bridge the gap between the UI designers and the technical implementation. In some cases they may be the designers too. Here are some things to look into:
+* Localization, for example **i18n**
+* Accessibility (including automated tools for testing it)
+* Responsive design
+* State management (ie Redux)
+* User experience design
+* Different styling approaches, for example **Tailwind** vs something like **Bootstrap**
+* Server side rendering
+* Caching / Edge computing
+
 ## UI / UX Developer
+
+This role is good for someone with a technical leaning but are more interested in the UI design aspect of frontend development. 
+I separated this from Frontend Specialist because I feel this is almost it's own skill. Often a company will have it's own internal UI component library. The developers who build these components are extremely skilled in styling. Another example of a UI developer may be someone who comes in for a specific project, very UI heavy. Less business logic focused and more visual. Here are some of the skills to look into:
+* Figma
+* Stencil.Js (used for making framework-agnostic UI components)
+* Master CSS, including transformations and more advanced features
+* SCSS
+* Javascript canvas
+* Animation libraries such as Three.Js
+* Take some formal training on UX design
 
 # Appendix: My Favorite Resources
 
