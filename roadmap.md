@@ -226,7 +226,7 @@ Some technologies to look into:
 
 ## Cloud / Architect
 
-A cloud focus can be a good transition from full-stack, as you just continue to broaden your understanding of technologies and stacks. Except instead of just front-end, back-end, and database, you have more categories to consider. Also, as someone
+A cloud focus can be a good transition from full-stack, as you just continue to broaden your understanding of technologies and stacks. Except instead of just front-end, back-end, and database, you have more categories to consider. All the categories mentioned in the "architecture" section above apply here, and more. Also, as someone who makes decisions very early on in a project, you should be aware of when to go with a less expensive option, such as low code tools like Power Platform or Dynamics 365 (or whatever other relevant tools are in your stack of choice). In general, being aware of the technologies available and their pros / cons is a huge part of this role. 
 
 ## Backend Specialist
 
